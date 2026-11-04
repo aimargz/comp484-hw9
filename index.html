@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A JavaScript demo of dates, number conversion, validation, and math for COMP 484." />
+    <title>JavaScript Mini Demo | COMP 484</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header class="page-header">
+        <div class="course"><span class="js-mark" aria-hidden="true">JS</span> COMP 484 / HOMEWORK 09</div>
+        <h1>JavaScript Mini Demo<span class="title-dot">.</span></h1>
+        <p class="intro">Dates, conversions, and a little math. All results below are displayed with JavaScript.</p>
+      </header>
+
+      <noscript><p class="notice">Enable JavaScript to see the date, number conversions, and math results.</p></noscript>
+
+      <section class="card date-card" aria-labelledby="dateHeading">
+        <div class="section-heading">
+          <span class="section-number" aria-hidden="true">01</span>
+          <h2 id="dateHeading">Date Display</h2>
+        </div>
+        <p id="dateOutput" class="date-output">Loading current date…</p>
+        <p class="section-note">The current date from your browser, formatted as MM/DD/YYYY.</p>
+      </section>
+
+      <section class="card" aria-labelledby="conversionHeading">
+        <div class="section-heading">
+          <span class="section-number" aria-hidden="true">02</span>
+          <h2 id="conversionHeading">Number Conversion Tests</h2>
+        </div>
+        <p class="section-note">Four strings converted with <code>Number()</code>, then checked for NaN and integer values.</p>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Number conversion results">
+          <table>
+            <caption class="visually-hidden">Original strings, converted numbers, and validation results</caption>
+            <thead>
+              <tr>
+                <th scope="col">Original</th>
+                <th scope="col">Converted</th>
+                <th scope="col">isNaN</th>
+                <th scope="col">isInteger</th>
+              </tr>
+            </thead>
+            <tbody id="numberConversionOutput"></tbody>
+          </table>
+        </div>
+        <div id="validationOutput" class="validation-output"></div>
+      </section>
+
+      <section class="card" aria-labelledby="mathHeading">
+        <div class="section-heading">
+          <span class="section-number" aria-hidden="true">03</span>
+          <h2 id="mathHeading">Math and Number Formatting</h2>
+        </div>
+        <p class="section-note">Add three quiz scores, divide by three, and format the average to two decimal places.</p>
+        <div id="mathOutput" class="math-output"></div>
+      </section>
+
+      <footer>COMP 484 · Homework 9 · JavaScript Built-In Objects</footer>
+    </main>
+  </body>
+</html>
